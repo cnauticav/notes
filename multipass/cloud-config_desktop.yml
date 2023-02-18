@@ -1,0 +1,16 @@
+#cloud-config
+
+# Upgrade the instance on first boot and install packages
+#
+# Default: false
+
+package_upgrade: true
+
+packages:
+  - ubuntu-desktop
+  - xrdp
+
+users:
+  - name: ubuntu
+#    passwd: $6$r8DE8HVoxtGNgME1$jUNdXeN.e6JYHaf7v7f4q.WQfjikEWQeF/6Ed.nbCjEs86KmwkuWjB4fnyKTGdIi0bDhuF3U/MyRPkaBg6h1E1
+    passwd: $y$j9T$tas6q.XwDPzVJnFTU1tor0$ZfS/01Xd7weBlZWGoMf4NdK6m53yU0hx0IRvi6ALLE8
